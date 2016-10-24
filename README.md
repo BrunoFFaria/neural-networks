@@ -1,7 +1,6 @@
 # Neural networks
 
-In this repository FeedForward neural networks are implemented in the C language. The current implementation supports a variable number of layers, as well as neurons in each layer. 
-The transfer function of each neuron can be specified from one of the tree definitions of: tangsig, linear, logsig. For training, the well-known optimization method levenberg-marquardt is used. 
+In this repository FeedForward neural networks are implemented in the C language. The current implementation supports a variable number of layers, as well as neurons in each layer. The transfer function of each neuron can be specified from one of the tree definitions of: tangsig, linear, logsig. Training is accomplished using the well-known optimization method levenberg-marquardt. The levenberg-marquardt method requires a system of equations to be solved, wich in this implementation is accomplished with LAPACK. So if you are interested in using it, you need to install lapack. For a typical usage scenario check nntest.c, otherwise, if you want to understand how it can be implemented check neural_network.c
 
-If you want to inspect the code of the neural network, check neural_network.c. Otherwise, if you are interested in how it can be used check nntest.c.
 
+Finally, I release this code under a MIT based license, so if you intend to use it please give me credit. 
